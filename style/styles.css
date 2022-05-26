@@ -1,9 +1,673 @@
-/* This will effect everything from 0 to 576px */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Oswald:wght@200&display=swap');
 
+* { 
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+  }
+body {
+  font-size: 0.8rem;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  color: #191919;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.6rem;
+    line-height: 1.85rem;
+}
+
+h3 {
+    font-size: 0.9rem;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.container {
+  margin: auto;
+  width: 93.4%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+  }
 
 
 /* Media Queries */
-@media (min-width: 576px) /* for mobile */{}
-@media (min-width:768px) /* for tablets */{}
-@media (min-width: 992px) /* for laptops */{}
-@media (min-width: 1200px) /* for large devices */{}
+
+@media (min-width: 375px) and (max-width: 767px) and (orientation : portrait) /* for mobile */{
+    .container {
+        width: 93.4%;
+    }
+}
+@media (min-width:768px) and (max-width: 959px) and (orientation : portrait) /* for tablets */{
+    .container {
+        width: 93.4%;
+    }
+}
+@media (min-width: 960px) /* for laptops */{
+    .container {
+        width: 62.64%;
+    }
+    h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 3.41rem;
+        line-height: 4rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1200px) /* for large devices */{
+    .container {
+        width: 62.64%;
+    }
+    h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 5.41rem;
+        line-height: 5.3rem;
+    }
+    h3 {
+        font-size: 1.7rem;
+    }
+}
+
+
+
+
+/* NAV*/
+
+
+
+header {
+    padding: 1rem 0;
+}
+
+  .navweb {
+    width: 67.29%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .navweb ul {
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .navweb ul li {
+    border-right: 0.063rem solid rgb(10, 10, 10);
+    padding-right: 0.75rem;
+    text-align: center;
+  }
+  
+  .navweb a, .navweb a:visited {
+      font-family: 'Open Sans', sans-serif;
+      color: #191919;
+      font-size: 0 0.75rem;
+      text-decoration: none;
+      transition: all .5s;
+    }
+
+    .logo {
+        width: 14.31%;
+      }
+      
+    .socials {
+          width: 23.4%;
+          padding-left: 6.25rem;
+          align-items: center;
+      }
+
+
+    /* Media Queries */
+
+    @media (min-width: 375px) and (max-width: 767px) and (orientation : portrait) /* for mobile */{
+        .navweb {
+            display: none;
+        }
+        .socials {
+            display: none;
+        }
+    }
+    @media (min-width:768px) and (max-width: 959px) and (orientation : portrait) /* for tablets */{
+        .navweb {
+            display: none;
+        }
+        .socials {
+            display: none;
+        }
+    }
+    @media (min-width: 960px) /* for laptops */{
+        .navweb {
+            display: flex;
+        }
+        .socials {
+            display: block;
+        }
+    }
+    @media (min-width: 1200px) /* for large devices */{
+        .navweb {
+            display: flex;
+        }
+        .socials {
+            display: block;
+        }
+    }
+  
+  
+
+
+
+/* HERO*/
+
+
+
+
+.hero {
+    background-image: url(../image/hero.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding-top: 15rem;
+  }
+
+  .herotxt {
+      background-color: rgba(210, 221, 207, 0.9);
+      text-align: center;
+      margin: 0 auto;
+      align-content: center;
+      align-self: center;
+  }
+
+
+/* Media Queries */
+@media (min-width: 375px) and (max-width: 767px) and (orientation : portrait) /* for mobile */{
+    .hero {
+        background-size:cover;
+    }
+}
+
+@media (min-width:768px) and (max-width: 959px) and (orientation : portrait) /* for tablets */{
+    .hero {
+        background-size:cover;
+    }
+}
+
+@media (min-width: 960px) /* for laptops */{
+    .hero {
+        background-size:cover;
+        padding-right: 45rem;
+        padding-top: 0;
+    }
+    .herotxt {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        text-align: right;
+        padding-right: 3rem;
+    }
+}
+@media (min-width: 1200px) /* for large devices */{
+    .hero {
+        background-size:cover;
+        padding-right: 90rem;
+        padding-top: 0;
+    }
+    .herotxt {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        text-align: right;
+        padding-right: 3rem;
+    }
+}
+
+
+
+
+
+/*Info section - Row2*/
+
+
+
+
+.info {
+    align-content: center;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.info1, .info2, .info3 {
+  border: 0.063rem solid gray;
+  width: 50%;
+  text-align: center;
+}
+
+.info1 h3, .info2 h3, .info3 h3 {
+    text-transform: uppercase;
+}
+
+.info a {
+    text-decoration: underline;
+    color: #191919;
+}
+
+.info a:hover {
+    text-decoration: underline;
+    color: #6b0d0d;
+}
+
+/* Media Queries */
+
+@media (min-width: 375px) and (max-width: 767px) and (orientation : portrait) /* for mobile */{
+    .info3 {
+        display: none;
+    }
+}
+@media (min-width:768px) and (max-width: 959px) and (orientation : portrait) /* for tablets */{
+    .info3 {
+        display: none;
+    }
+}
+@media (min-width: 960px) /* for laptops */{
+    .info3 {
+        display: block;
+    }
+}
+@media (min-width: 1200px) /* for large devices */{
+    .info3 {
+        display: block;
+    }
+}
+
+
+
+
+/* FEATURE*/
+
+
+
+
+.feature {
+  background-image: url(../image/pizza_ad.jpg);
+  background-repeat: no-repeat;
+  background-size:contain;
+  text-align: center;
+}
+
+.feature .container {
+    padding-left: 9.375rem;
+    padding-bottom: 15.625rem;
+    padding-top: 6.25rem;
+}
+
+.feature h1 {
+  color: white;
+}
+
+/* Media Queries */
+
+@media (min-width: 375px) and (max-width: 767px) and (orientation : portrait) /* for mobile */{
+    .feature {
+        display:block;
+    }
+}
+@media (min-width:768px) and (max-width: 959px) and (orientation : portrait) /* for tablets */{
+    .feature {
+        display:block;
+    }
+}
+@media (min-width: 960px) /* for laptops */{
+    .feature {
+        display:none;
+    }
+}
+@media (min-width: 1200px) /* for large devices */{
+    .feature {
+        display:none;
+    }
+}
+
+
+
+
+/* MAP */
+
+
+
+
+#map {
+  text-align: center;
+  background-image: url(../image/map.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding-bottom: 15rem;
+}
+
+#map .maptxt {
+    background-color: rgba(210, 221, 207, 0.9);
+}
+
+/* Media Queries */
+
+@media (min-width: 375px) and (max-width: 767px) and (orientation : portrait) /* for mobile */{}
+@media (min-width:768px) and (max-width: 959px) and (orientation : portrait) /* for tablets */{}
+@media (min-width: 960px) /* for laptops */{
+    #map {
+        display: none;
+    }
+}
+@media (min-width: 1200px) /* for large devices */{
+    #map {
+        display: none;
+    }
+}
+
+
+
+
+/* GALLERY */
+
+
+
+
+#gallery {
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+#gallery img {
+  width: 24%;
+  background-size: cover;
+  display: block;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 375px) and (max-width: 767px) and (orientation : portrait) /* for mobile */{
+    #gallery {
+        display: none;
+    }
+}
+@media (min-width:768px) and (max-width: 959px) and (orientation : portrait) /* for tablets */{
+    #gallery {
+        display: none;
+    }
+}
+@media (min-width: 960px) /* for laptops */{
+    #gallery {
+        display: flex;
+    }
+}
+@media (min-width: 1200px) /* for large devices */{
+    #gallery {
+        display: flex;
+    }
+}
+
+
+
+
+/* FOOTER */
+
+
+
+
+footer {
+  width: 100%;
+  background-color: black;
+  color:#575757;
+  padding-top: 0.813rem;
+  padding-bottom: 1.375rem;
+}
+
+footer .container {
+    display: block;
+    margin: 0 auto;
+}
+
+footer .Field .mailing {
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.input {
+  display: inline-block;
+  width: 75%;
+  height: 2.188rem;
+  background-color: white;
+  background-repeat: no-repeat;
+  align-items:center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.SignUp {
+  align-content: center;
+  display: inline-block;
+  width: 15%;
+  height: 50%;
+  background-color:rgb(63, 63, 63);
+  color: white;
+  font-size: 0.875rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
+.Name, .Field {
+  margin: 0 auto;
+  display: block;
+  align-content: center;
+  align-items: center;
+}
+
+.locations {
+    display: flex;
+}
+
+
+.footer1, .footer2, .footer3 {
+  text-align: center;
+  line-height: 1.9rem;
+  width: 100%;
+  display: block;
+}
+
+.footer1 {
+    width:100%;
+}
+
+
+footer p a {
+    color: #575757;
+    text-decoration: underline;
+}
+
+footer p a:hover {
+    color:#CFD8DC;
+    text-decoration: none;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 375px) and (max-width: 767px) and (orientation : portrait) /* for mobile */{
+    .footer1 {
+        width: 100%;
+        display:block;
+    }
+    .footer2 {
+        width: 50%;
+    }
+    .footer3 {
+        width: 50%;
+    }
+}
+@media (min-width:768px) and (max-width: 959px) and (orientation : portrait) /* for tablets */{
+    .footer1 {
+        width: 100%;
+        display:block;
+    }
+    .footer2 {
+        width: 50%;
+    }
+    .footer3 {
+        width: 50%;
+    }
+}
+@media (min-width: 960px) /* for laptops */{
+    footer .container {
+        display:flex;
+        flex-direction: row-reverse;
+    }
+    .Field {
+        width: 62.9%;
+        padding-top: 2rem;
+    }
+    .Name {
+        width: 37.1%;
+    }
+    .SignUp {
+        height: 15%;
+    }
+    .locations {
+        display:block;
+    }
+    
+}
+@media (min-width: 1200px) /* for large devices */{
+    footer .container {
+        display:flex;
+        flex-direction: row-reverse;
+    }
+    .Field {
+        width: 62.9%;
+    }
+    .Name {
+        width: 37.1%;
+    }
+    .SignUp {
+        height: 15%;
+    }
+    .locations {
+        display:block;
+    }
+    
+}
+
+
+
+/* HAMBURGER*/
+
+
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 1.625rem;
+  height: 1.625rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -0.5rem;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 0.5rem;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 18.75rem;
+  height: 100%;
+  margin: 0;
+  padding: 5rem 0;
+  list-style: none;
+  background-color: #D9E5D9;
+  box-shadow: 0.125rem 0.125rem 0.375rem rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #191919;
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Media Queries */
+
+@media (min-width: 375px) and (max-width: 767px) and (orientation : portrait) /* for mobile */{}
+@media (min-width:768px) and (max-width: 959px) and (orientation : portrait) /* for tablets */{}
+@media (min-width: 960px) /* for laptops */{
+    .hamburger-menu {
+        display:none;
+    }
+}
+@media (min-width: 1200px) /* for large devices */{
+    .hamburger-menu {
+        display:none;
+    }
+}
+
+
+
+
+
